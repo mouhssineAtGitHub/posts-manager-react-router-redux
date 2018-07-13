@@ -22,7 +22,7 @@ class PostEdit extends Component {
           onSubmit={values => {
             window.alert(`You edited:\n\n${JSON.stringify(values, null, 2)}`);
             this.props.editPost(values);
-            this.props.history.push("/");
+            this.props.history.push("/posts-manager-react-router-redux/");
           }}
           initialValues={{
             id: myPost.id,

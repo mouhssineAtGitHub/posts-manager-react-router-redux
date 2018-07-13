@@ -12,7 +12,9 @@ const PostMainManagerRep = props => {
           <i
             className="fa fa-plus-circle"
             aria-hidden="true"
-            onClick={() => props.history.push("/PostAddNew")}
+            onClick={() =>
+              props.history.push("/posts-manager-react-router-redux/PostAddNew")
+            }
           />
         </div>
         <div className="post-shortcut">

@@ -2,7 +2,9 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 const PostShortcutRep = props => {
-  const detailLink = `/PostDetails/${props.postElement.id}`;
+  const detailLink = `/posts-manager-react-router-redux/PostDetails/${
+    props.postElement.id
+  }`;
   return (
     <div className="shortcut" key={props.index}>
       <span className="post-shortcut-title">{props.postElement.title}</span>
@@ -19,7 +21,11 @@ const PostShortcutRep = props => {
             props.deletePost(props.postElement.id);
           }}
         />
-        <Link to={`/PostEDit/${props.postElement.id}`}>
+        <Link
+          to={`/posts-manager-react-router-redux/PostEDit/${
+            props.postElement.id
+          }`}
+        >
           <i className="fas fa-edit" />
         </Link>
       </span>

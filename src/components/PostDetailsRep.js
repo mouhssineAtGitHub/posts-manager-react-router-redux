@@ -7,7 +7,7 @@ const PostDetailsRep = props => {
       <h2>Post Details</h2>
       <div className="wrapper">
         <div className="post-details-actions">
-          <Link to="/">
+          <Link to="/posts-manager-react-router-redux/">
             <button
               className="btn-big"
               onClick={() => {
@@ -18,13 +18,15 @@ const PostDetailsRep = props => {
             </button>
           </Link>
 
-          <Link to={`/PostEdit/${props.myPost.id}`}>
+          <Link
+            to={`/posts-manager-react-router-redux/PostEdit/${props.myPost.id}`}
+          >
             <button className="btn-big">
               Edit Post <i className="fas fa-edit" />
             </button>
           </Link>
 
-          <Link to="/">
+          <Link to="/posts-manager-react-router-redux/">
             <button className="btn-big">
               Back to Posts <i className="fas fa-home" />
             </button>

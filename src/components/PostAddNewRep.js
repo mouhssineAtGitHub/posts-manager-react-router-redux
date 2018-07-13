@@ -45,7 +45,6 @@ const renderField = ({
 class PostAddNewRep extends Component {
   render() {
     const { handleSubmit, pristine, reset, submitting } = this.props;
-    console.log("errors:--");
     return (
       <form onSubmit={handleSubmit}>
         <div className="post-add-new">
@@ -82,7 +81,7 @@ class PostAddNewRep extends Component {
           <button disabled={pristine || submitting} onClick={reset}>
             Reset
           </button>
-          <Link to="/">
+          <Link to="/posts-manager-react-router-redux/">
             <button>Back To Main</button>
           </Link>
         </div>

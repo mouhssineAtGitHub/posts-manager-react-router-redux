@@ -81,7 +81,7 @@ class PostEditRep extends Component {
           <button disabled={pristine || submitting} onClick={reset}>
             Cancel
           </button>
-          <Link to="/">
+          <Link to="/posts-manager-react-router-redux/">
             <button>Back To Main</button>
           </Link>
         </div>

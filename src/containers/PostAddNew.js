@@ -11,7 +11,7 @@ class PostAddNew extends Component {
         onSubmit={values => {
           window.alert(`You submitted:\n\n${JSON.stringify(values, null, 2)}`);
           this.props.addPost(values);
-          this.props.history.push("/");
+          this.props.history.push("/posts-manager-react-router-redux/");
         }}
       />
     );
